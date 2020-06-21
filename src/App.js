@@ -4,6 +4,7 @@ import DonationSummary from "./components/DonationSummary";
 import ProgressBar from "./components/ProgressBar";
 import AmountNeeded from "./components/AmountNeeded";
 
+import './styles/_styles.scss';
 
 function App() {
     const [amount, setAmount] = useState(5000);
