@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import DonationForm from "./components/DonationForm";
 import DonationSummary from "./components/DonationSummary";
+import ProgressBar from "./components/ProgressBar";
 
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
   return (
     <div className="App">
         <div className="card">
+            <div className="progress-bar">
+                <ProgressBar amount={amount}/>
+            </div>
             <div className="card-content">
                 <DonationSummary amount={amount} numberOfDonations={numberOfDonations} />
                 <DonationForm amount={amount} giveDonation={handleDonation}/>
