@@ -1,18 +1,24 @@
 import React, {useState} from 'react';
 import DonationForm from "./components/DonationForm";
+import DonationSummary from "./components/DonationSummary";
 
 
 function App() {
     const [amount, setAmount] = useState(5000);
-    const [numberOfDonation, setNumberOfDonations] = useState(0);
+    const [numberOfDonations, setNumberOfDonations] = useState(0);
 
     const handleDonation = (value) => {
         setAmount(amount-value);
-        setNumberOfDonations(numberOfDonation + 1);
+        setNumberOfDonations(numberOfDonations + 1);
     }
   return (
     <div className="App">
-      <DonationForm amount={amount} giveDonation={handleDonation}/>
+        <div className="card">
+            <div className="card-content">
+                <DonationSummary amount={amount} numberOfDonations={numberOfDonations} />
+                <DonationForm amount={amount} giveDonation={handleDonation}/>
+            </div>
+        </div>
     </div>
   );
 }
