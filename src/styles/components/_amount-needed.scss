@@ -1,0 +1,40 @@
+/* Tooltip */
+.tooltip {
+  position: relative;
+  margin-bottom: $m-size;
+  margin-top: $xl-size;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tooltiptext {
+  width: 350px;
+  background-color: $ocean-40;
+  color: $ocean;
+  border-radius: 6px;
+  padding: 5px 10px ;
+  font-size: $s-size;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: $ocean-40 transparent transparent transparent;
+}
+
+.small-dollar-sign{
+  font-size: 10px;
+}
