@@ -22,6 +22,9 @@
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
+  @media (max-width: $mobile-breakpoint) {
+    width: 280px;
+  }
 }
 
 .tooltip .tooltiptext::after {

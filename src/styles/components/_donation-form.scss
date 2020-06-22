@@ -9,6 +9,10 @@
   font-weight: 800;
   border-radius: 8px 8px;
   width: 100%;
+  @media (max-width: $mobile-breakpoint) {
+
+    height: 4rem;
+  }
 }
 
 .input-error{
@@ -28,6 +32,12 @@
   font-size: $font-size-large;
   font-weight: bold;
   border-radius: 0 8px 8px 0;
+  @media (max-width: $mobile-breakpoint) {
+    height: 40px;
+    bottom: 40px;
+    left: 120px;
+    font-size: $m-size;
+  }
 }
 
 .input-dollar {
@@ -50,4 +60,7 @@
 .errors{
   color: #f56e94;
   font-size: $s-size;
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 1rem;
+  }
 }

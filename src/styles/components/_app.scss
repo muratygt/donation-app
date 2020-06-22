@@ -17,6 +17,10 @@
   box-sizing: border-box;
   width: 350px;
   font-family: 'IBM Plex Sans', sans-serif;
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 280px;
+  }
 }
 
 .progress-bar {
