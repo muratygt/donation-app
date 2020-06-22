@@ -11,11 +11,11 @@ const DonationSummary = ( {amount, numberOfDonations} ) => {
                 <span>This project is funded on tiem</span>
                 }
             </h1>
-            { (amount > 0)
+            { (amount !== 0)
                 ?
                 <span>Join the <span style={{ fontWeight: 'bold'}}>{numberOfDonations !== 0 && numberOfDonations}</span> other donor{numberOfDonations === 1 ? '' : 's'} who already supported this campaign</span>
                 :
-                <span>Thanks all of <span style={{ fontWeight: 'bold'}}>{numberOfDonations}</span> donors who supported this campaign</span>
+                <span>Thanks to all donors who supported this campaign</span>
             }
         </div>
     )

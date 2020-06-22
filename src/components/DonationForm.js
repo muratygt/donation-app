@@ -38,12 +38,12 @@ function DonationForm ( {amount, giveDonation} ) {
                             disabled={amount === 0}
                         />
                     </span>
-                    <button className="donate-button" disabled={false}>Give Now</button>
+                    <button className="donate-button" disabled={minAmountError || maxAmountError || amount === 0 }>Give Now</button>
                 </form>
             </div>
             <div className="errors">
                 {minAmountError ? <p>This campaign only accepts amounts greater than $5</p> : <p></p>}
-                {maxAmountError ? <p>Please enter an amount less than or equal to the remaining balance of {amount}</p> : <p></p>}
+                {maxAmountError ? <p>Please enter an amount less than or equal to the remaining balance of ${amount}</p> : <p></p>}
 
             </div>
         </div>

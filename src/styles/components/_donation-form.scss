@@ -1,0 +1,52 @@
+.donation-form{
+  height: 50px;
+}
+.input-box{
+  border: 1px solid #cacccd;
+  height: $xl-size;
+  padding: $s-size;
+  font-size: $font-size-large;
+  font-weight: 800;
+  border-radius: 8px 8px;
+  width: 100%;
+}
+.input-error{
+  border: 2px solid #f56e94 !important;
+  outline: none;
+}
+
+.donate-button{
+  position: relative;
+  height: 48px;
+  bottom: 48px;
+  left: 175px;
+  border: 1px solid #cacccd;
+  background-color: $mint;
+  color: $ocean-20;
+  border: none;
+  padding: 13px;
+  font-size: $font-size-large;
+  font-weight: bold;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.input-dollar {
+  position: relative;
+  color: $slate-60;
+}
+.input-dollar.left input {
+  padding: 10px 0px 10px 18px;
+}
+
+.input-dollar:before {
+  position: absolute;
+  bottom: -4px;
+  content:"$";
+}
+.input-dollar.left:before {
+  left: 5px;
+}
+
+.errors{
+  color: #f56e94;
+}
